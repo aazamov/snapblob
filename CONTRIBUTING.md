@@ -1,4 +1,4 @@
-# Contributing to media-client
+# Contributing to snapblob
 
 Thanks for your interest in contributing. This guide covers everything you need to get started.
 
@@ -11,8 +11,8 @@ Thanks for your interest in contributing. This guide covers everything you need 
 ## Setup
 
 ```bash
-git clone https://github.com/nicedoc/media-client.git
-cd media-client
+git clone https://github.com/aazamov/snapblob.git
+cd snapblob
 npm install
 npm run dev
 ```

@@ -1290,7 +1290,7 @@ Contributions are welcome. Please open an issue first to discuss changes.
 
 ```bash
 git clone https://github.com/aazamov/snapblob.git
-cd media-client
+cd snapblob
 npm install
 npm test          # run tests
 npm run build     # build library

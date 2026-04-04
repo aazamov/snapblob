@@ -6,7 +6,7 @@ allowed-tools: Bash Read Grep
 argument-hint: [--fix to auto-fix issues]
 ---
 
-Build the media-client library and verify everything compiles:
+Build the snapblob library and verify everything compiles:
 
 1. Run `npx tsc --noEmit` to type-check
 2. Run `npm run build` to build ESM + CJS output

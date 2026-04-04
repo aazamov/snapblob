@@ -6,7 +6,7 @@ allowed-tools: Bash Read Grep Edit Write
 argument-hint: [file-pattern or --coverage]
 ---
 
-Run the test suite for media-client:
+Run the test suite for snapblob:
 
 1. If `$ARGUMENTS` is provided and is a file pattern, run `npx vitest run $ARGUMENTS`
 2. If `$ARGUMENTS` contains `--coverage`, run `npx vitest run --coverage`

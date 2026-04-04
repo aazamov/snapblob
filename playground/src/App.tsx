@@ -75,7 +75,7 @@ export default function App() {
       <aside className={`docs-sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <h1 className="sidebar-logo" onClick={() => navigate("getting-started")}>
-            media-client
+            snapblob
           </h1>
           <span className="sidebar-version">v1.0.0-alpha</span>
         </div>

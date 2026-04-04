@@ -5,7 +5,7 @@ export default function GettingStarted() {
     <div className="doc-page">
       <h1>Getting Started</h1>
       <p className="doc-lead">
-        media-client is a browser-native library for image compression and video transcoding.
+        snapblob is a browser-native library for image compression and video transcoding.
         No server required -- everything runs in the browser and returns a standard <code>Blob</code>.
       </p>
 

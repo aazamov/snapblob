@@ -5,7 +5,7 @@ model: sonnet
 allowed-tools: Read Grep Glob
 ---
 
-You are a migration planning agent for media-client library rewrite.
+You are a migration planning agent for snapblob library rewrite.
 
 When invoked:
 

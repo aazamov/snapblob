@@ -5,7 +5,7 @@ model: sonnet
 allowed-tools: Read Grep Glob Write Edit Bash(npx vitest *)
 ---
 
-You are a test writing agent for media-client library. Framework: Vitest.
+You are a test writing agent for snapblob library. Framework: Vitest.
 
 When given a source file or module to test:
 

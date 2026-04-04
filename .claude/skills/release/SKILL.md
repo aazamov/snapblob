@@ -6,7 +6,7 @@ allowed-tools: Bash Read Edit Write Grep
 argument-hint: [patch|minor|major]
 ---
 
-Prepare a release for media-client:
+Prepare a release for snapblob:
 
 1. Verify the working tree is clean (`git status`)
 2. Run full quality checks: `npx tsc --noEmit && npm test && npm run build`

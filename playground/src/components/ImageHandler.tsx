@@ -338,8 +338,8 @@ export default function ImageHandler() {
       {stats && (
         <details className="code-preview">
           <summary>View generated code</summary>
-          <pre>{`import { compressImage } from "media-client/image";
-${validateEnabled ? `import { validateImage } from "media-client/image";\n` : ""}
+          <pre>{`import { compressImage } from "snapblob/image";
+${validateEnabled ? `import { validateImage } from "snapblob/image";\n` : ""}
 ${validateEnabled ? `const validation = await validateImage(file, {
   maxFileSize: ${valMaxFileSize} * 1024 * 1024,
   minSize: [${valMinWidth}, ${valMinHeight}],

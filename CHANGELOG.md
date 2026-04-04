@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
 - `compressImage(file, options)` — standalone image compression function
 - `transcodeVideo(file, options)` — standalone video transcoding function  
 - `validateImage(file, options)` — standalone image validation
-- Subpath exports: `media-client/image`, `media-client/video`
+- Subpath exports: `snapblob/image`, `snapblob/video`
 - Vitest test suite
 - ESLint + Prettier configuration
 - MIT License

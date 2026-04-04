@@ -418,7 +418,7 @@ export default function VideoHandler() {
       {stats && (
         <details className="code-preview">
           <summary>View generated code</summary>
-          <pre>{`import { transcodeVideo${selectedPreset !== "custom" ? ", applyPreset" : ""} } from "media-client/video";
+          <pre>{`import { transcodeVideo${selectedPreset !== "custom" ? ", applyPreset" : ""} } from "snapblob/video";
 
 const blob = await transcodeVideo(file, {${selectedPreset !== "custom"
   ? `\n  ...applyPreset("${selectedPreset}"),`

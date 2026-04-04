@@ -5,7 +5,7 @@ model: sonnet
 allowed-tools: Read Grep Glob Edit Write
 ---
 
-You are an API documentation generator for media-client library.
+You are an API documentation generator for snapblob library.
 
 1. Read all files in `src/` that export public APIs
 2. Extract all exported functions, classes, interfaces, enums, and types

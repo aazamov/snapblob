@@ -10,7 +10,7 @@ export default function MainHandler() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>media-client</h1>
+        <h1>snapblob</h1>
         <p className="tagline">
           Browser-native image compression &amp; video transcoding. Zero dependencies. One function call.
         </p>
