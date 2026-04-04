@@ -1,0 +1,125 @@
+{
+  "name": "snapblob",
+  "version": "0.0.10",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./image": {
+      "import": {
+        "types": "./dist/image/index.d.ts",
+        "default": "./dist/image/index.mjs"
+      },
+      "require": {
+        "types": "./dist/image/index.d.ts",
+        "default": "./dist/image/index.cjs"
+      }
+    },
+    "./video": {
+      "import": {
+        "types": "./dist/video/index.d.ts",
+        "default": "./dist/video/index.mjs"
+      },
+      "require": {
+        "types": "./dist/video/index.d.ts",
+        "default": "./dist/video/index.cjs"
+      }
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "image": ["dist/image/index.d.ts"],
+      "video": ["dist/video/index.d.ts"]
+    }
+  },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/",
+    "format": "prettier --write 'src/**/*.ts'",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "@types/pica": "^9.0.5",
+    "typescript": "~5.7.2",
+    "unplugin-dts": "^1.0.0-beta.0",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "peerDependencies": {
+    "pica": "^9.0.0",
+    "@ffmpeg/ffmpeg": "^0.12.0",
+    "@ffmpeg/util": "^0.12.0"
+  },
+  "peerDependenciesMeta": {
+    "pica": {
+      "optional": true
+    },
+    "@ffmpeg/ffmpeg": {
+      "optional": true
+    },
+    "@ffmpeg/util": {
+      "optional": true
+    }
+  },
+  "dependencies": {},
+  "description": "Browser-native image compression & video transcoding. Zero framework dependency. Returns Blob.",
+  "keywords": [
+    "image-compression",
+    "image-resize",
+    "video-transcoding",
+    "ffmpeg",
+    "ffmpeg-wasm",
+    "pica",
+    "browser",
+    "wasm",
+    "webp",
+    "typescript",
+    "media",
+    "compress"
+  ],
+  "author": {
+    "name": "Azamov Ashrafkhan",
+    "email": "aazamov809@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Lombord",
+      "email": "lombord0102@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aazamov/snapblob"
+  },
+  "homepage": "https://github.com/aazamov/snapblob#readme",
+  "bugs": {
+    "url": "https://github.com/aazamov/snapblob/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

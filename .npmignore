@@ -1,0 +1,14 @@
+src/
+*.ts
+!dist/
+node_modules/
+.git/
+.vscode/
+.DS_Store
+*.log
+.env*
+coverage/
+docs/
+tests/
+vite.config.ts
+tsconfig.json 

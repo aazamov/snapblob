@@ -1,0 +1,78 @@
+export enum FFMPEGGenericEncoder {
+  COPY = "copy",
+}
+
+export enum FFMPEGVideoEncoder {
+  H264 = "libx264",
+  H265 = "libx265",
+  MPEG4 = "mpeg4",
+  MPEG2 = "mpeg2video",
+  VP8 = "libvpx",
+  VP9 = "libvpx-vp9",
+  AV1_AOM = "libaom-av1",
+  AV1_SVT = "libsvtav1",
+  PRORES = "prores_ks",
+  THEORA = "libtheora",
+  XVID = "libxvid",
+  H264_NVENC = "h264_nvenc",
+  H265_NVENC = "hevc_nvenc",
+  H264_QSV = "h264_qsv",
+  H265_QSV = "hevc_qsv",
+  H264_VIDEOTOOLBOX = "h264_videotoolbox",
+  H265_VIDEOTOOLBOX = "hevc_videotoolbox",
+  H264_AMF = "h264_amf",
+  H265_AMF = "hevc_amf",
+}
+
+export enum FFMPEGAudioEncoder {
+  AAC = "aac",
+  AAC_FDK = "libfdk_aac",
+  MP3 = "libmp3lame",
+  MP2 = "mp2",
+  AC3 = "ac3",
+  EAC3 = "eac3",
+  OPUS = "libopus",
+  VORBIS = "libvorbis",
+  DCA = "dca",
+  FLAC = "flac",
+  ALAC = "alac",
+  WAVPACK = "wavpack",
+  TRUEHD = "truehd",
+  PCM_S16LE = "pcm_s16le",
+  PCM_S24LE = "pcm_s24le",
+}
+
+export enum EncoderH264Preset {
+  ULTRAFAST = "ultrafast",
+  SUPERFAST = "superfast",
+  VERYFAST = "veryfast",
+  FASTER = "faster",
+  FAST = "fast",
+  MEDIUM = "medium",
+  SLOW = "slow",
+  SLOWER = "slower",
+  VERYSLOW = "veryslow",
+}
+
+export enum FFMPEGPixelFormat {
+  YUV420P = "yuv420p",
+  YUV422P = "yuv422p",
+  YUV444P = "yuv444p",
+  YUV420P10LE = "yuv420p10le",
+  YUV422P10LE = "yuv422p10le",
+  YUV444P10LE = "yuv444p10le",
+  NV12 = "nv12",
+  P010LE = "p010le",
+  YUVA420P = "yuva420p",
+  YUVA444P = "yuva444p",
+  YUYV422 = "yuyv422",
+  UYVY422 = "uyvy422",
+  RGB24 = "rgb24",
+  BGR24 = "bgr24",
+  GBRP = "gbrp",
+  GBRP10LE = "gbrp10le",
+  RGBA = "rgba",
+  BGRA = "bgra",
+  GRAY = "gray",
+  PAL8 = "pal8",
+}

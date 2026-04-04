@@ -1,0 +1,81 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(src/**)",
+      "Read(tests/**)",
+      "Read(playground/src/**)",
+      "Read(.claude/**)",
+      "Read(CLAUDE.md)",
+      "Read(PLAN.md)",
+      "Read(package.json)",
+      "Read(tsconfig.json)",
+      "Read(vite.config.ts)",
+      "Read(vitest.config.ts)",
+      "Read(README.md)",
+      "Read(CHANGELOG.md)",
+      "Bash(npm run build)",
+      "Bash(npm run dev)",
+      "Bash(npm test *)",
+      "Bash(npm test)",
+      "Bash(npm run lint *)",
+      "Bash(npm run lint)",
+      "Bash(npm run format *)",
+      "Bash(npm run format)",
+      "Bash(npx tsc *)",
+      "Bash(npx vitest *)",
+      "Bash(npx prettier *)",
+      "Bash(npx eslint *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git branch *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(gh issue *)",
+      "Bash(gh pr *)",
+      "Edit(src/**)",
+      "Edit(tests/**)",
+      "Edit(playground/src/**)",
+      "Edit(README.md)",
+      "Edit(CHANGELOG.md)",
+      "Edit(PLAN.md)",
+      "Write(src/**)",
+      "Write(tests/**)",
+      "Write(playground/src/**)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(npm publish *)",
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)",
+      "Edit(.env*)",
+      "Edit(package-lock.json)",
+      "Edit(.git/**)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/format-on-save.sh"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/protect-files.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
