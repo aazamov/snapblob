@@ -1,6 +1,6 @@
 {
   "name": "snapblob",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -118,7 +118,7 @@
     "type": "git",
     "url": "git+https://github.com/aazamov/snapblob.git"
   },
-  "homepage": "https://github.com/aazamov/snapblob#readme",
+  "homepage": "https://snapblob.aazamov.uz",
   "bugs": {
     "url": "https://github.com/aazamov/snapblob/issues"
   },
