@@ -1,6 +1,6 @@
 {
   "name": "snapblob",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -65,17 +65,23 @@
     "prepublishOnly": "npm run typecheck && npm test && npm run build"
   },
   "devDependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
     "@types/node": "^22.15.29",
     "@types/pica": "^9.0.5",
+    "axios": "^1.14.0",
+    "happy-dom": "^20.8.9",
+    "pica": "^9.0.1",
     "typescript": "~5.7.2",
     "unplugin-dts": "^1.0.0-beta.0",
     "vite": "^6.1.0",
-    "vite-plugin-dts": "^4.5.4"
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.1.2"
   },
   "peerDependencies": {
-    "pica": "^9.0.0",
     "@ffmpeg/ffmpeg": "^0.12.0",
-    "@ffmpeg/util": "^0.12.0"
+    "@ffmpeg/util": "^0.12.0",
+    "pica": "^9.0.0"
   },
   "peerDependenciesMeta": {
     "pica": {
@@ -88,7 +94,6 @@
       "optional": true
     }
   },
-  "dependencies": {},
   "description": "Browser-native image compression & video transcoding. Zero framework dependency. Returns Blob.",
   "keywords": [
     "image-compression",
