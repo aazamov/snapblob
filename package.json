@@ -39,8 +39,12 @@
   },
   "typesVersions": {
     "*": {
-      "image": ["dist/image/index.d.ts"],
-      "video": ["dist/video/index.d.ts"]
+      "image": [
+        "dist/image/index.d.ts"
+      ],
+      "video": [
+        "dist/video/index.d.ts"
+      ]
     }
   },
   "files": [
@@ -112,7 +116,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/aazamov/snapblob"
+    "url": "git+https://github.com/aazamov/snapblob.git"
   },
   "homepage": "https://github.com/aazamov/snapblob#readme",
   "bugs": {

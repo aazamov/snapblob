@@ -49,7 +49,7 @@ export interface BatchCompressOptions extends CompressImageOptions {
  */
 export async function compressImages(
   files: (File | Blob)[],
-  options: BatchCompressOptions = {},
+  options: BatchCompressOptions = {}
 ): Promise<Blob[]> {
   if (files.length === 0) {
     return [];
@@ -59,7 +59,7 @@ export async function compressImages(
 
   if (concurrency < 1 || !Number.isFinite(concurrency)) {
     throw new ImageProcessingError(
-      `Invalid concurrency: ${concurrency}. Must be a positive integer.`,
+      `Invalid concurrency: ${concurrency}. Must be a positive integer.`
     );
   }
 
@@ -83,7 +83,8 @@ export async function compressImages(
         onProgress: undefined,
       };
 
-      results[index] = await compressImage(files[index], fileOptions);
+      const file = files[index]!;
+      results[index] = await compressImage(file, fileOptions);
 
       completedCount += 1;
       const overallProgress = (completedCount / total) * 100;
