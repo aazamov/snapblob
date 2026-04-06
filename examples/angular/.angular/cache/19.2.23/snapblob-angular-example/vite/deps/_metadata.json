@@ -1,0 +1,58 @@
+{
+  "hash": "a0b1af53",
+  "configHash": "e70c9b42",
+  "lockfileHash": "e3386708",
+  "browserHash": "e74b9abc",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "3225b1f8",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "8d59ba29",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "9efe720c",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "d794d4e4",
+      "needsInterop": false
+    },
+    "snapblob/image": {
+      "src": "../../../../../../../../dist/image/index.mjs",
+      "file": "snapblob_image.js",
+      "fileHash": "1d446fb0",
+      "needsInterop": false
+    },
+    "snapblob/video": {
+      "src": "../../../../../../../../dist/video/index.mjs",
+      "file": "snapblob_video.js",
+      "fileHash": "97bc6ea6",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-7HSAGAZM": {
+      "file": "chunk-7HSAGAZM.js"
+    },
+    "chunk-YANTEFQD": {
+      "file": "chunk-YANTEFQD.js"
+    },
+    "pica-TMGC6K7Z": {
+      "file": "pica-TMGC6K7Z.js"
+    },
+    "chunk-EIB7IA3J": {
+      "file": "chunk-EIB7IA3J.js"
+    }
+  }
+}

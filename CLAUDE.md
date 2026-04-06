@@ -2,7 +2,7 @@
 
 Browser-native media compression & processing library (images + video). Zero framework dependency. Open-source npm package.
 
-**Package:** `snapblob` | **Version:** 1.0.0-alpha.1 | **License:** MIT
+**Package:** `snapblob` | **Version:** 1.0.0-beta.1 | **License:** MIT | **Repo:** github.com/aazamov/snapblob
 
 ## Build & Test
 
@@ -58,7 +58,12 @@ playground/               # React demo app (separate Vite project)
     VideoHandler.tsx      # Full options UI for transcodeVideo + presets
   src/utils.ts            # formatSize, formatDuration, formatDimensions
 
-tests/                    # Vitest test suites (93 tests)
+tests/                    # Vitest test suites (176 tests)
+  image/                  # compressImage, validate, load, utils tests
+  video/                  # transcodeVideo, presets, errors tests
+  file-handlers/          # Legacy handler tests
+  utils/                  # Shared utility tests
+  constants/              # Constants tests
 ```
 
 ### Primary API (new functional style)
